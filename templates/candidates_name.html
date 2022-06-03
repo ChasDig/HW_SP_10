@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+</head>
+<body>
+<h1>Данные о кандидате:</h1>
+<h2>По имени:</h2>
+<ul>
+    {% for buf in list_candidates %}
+    {% if name == buf['name'].replace(" ", "") %}
+    <li>Имя кандидата: {{buf['name']}}</li>
+    <li>Позиция кандидата: {{buf['position']}}</li>
+    <li>Навыки кандидата: {{buf['skills']}}<br><br></li>
+    {% endif %}
+    {% endfor %}
+</ul>
+</body>
+</html>
