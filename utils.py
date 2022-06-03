@@ -1,6 +1,5 @@
 import requests
 
-
 def candidates_list():  # loads a dictionary with information about candidates in json file
     """
     :return: load_json_candidates: json file with data about candidates
